@@ -14,9 +14,10 @@ book:
      Este libro se ha creado con  <a href="https://quarto.org/">Quarto</a>.
   cover-image: images/quarto.png
   favicon: images/quarto2.png
-#  repo-url: https://github.com
-#  repo-branch: main
-#  repo-actions: [edit, issue]
+  site-url: https://marcosolivamunoz.github.io/analisis_TFG/
+  repo-url: https://github.com/MarcosOlivaMunoz/analisis_TFG
+  repo-branch: main
+  repo-actions: [edit, issue]
   chapters:
     - index.qmd
     - contexto.qmd
