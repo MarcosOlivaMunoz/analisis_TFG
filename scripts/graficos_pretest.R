@@ -1,6 +1,6 @@
 #library(tidyverse)
 
-data <- read.csv("C:/Users/marco/OneDrive/Desktop/TFG/R/data/datos_falsos.csv", header = TRUE, sep = ";") %>% as_tibble()
+data <- read.csv("data/datos_falsos.csv", header = TRUE, sep = ";") %>% as_tibble()
 
 circular_pretest <- ggplot(data, aes(x="", y=Cantidad, fill=Modelo)) + 
   geom_bar(stat="identity", width=1) + 
