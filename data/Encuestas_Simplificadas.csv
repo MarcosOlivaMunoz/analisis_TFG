@@ -1,0 +1,112 @@
+Sexo,Edad,Curso,Grado,Localidad,Dias_estudio,Horas_estudio,Franja_estudio,Lugar_estudio,Tendencia_estudio,Organizacion,Preparacion_examen
+Femenino,21,3,Grado en Matematicas,Palma,4,Entre 1 y 2 horas,Mañana,Biblioteca,3,No,De 8 a 14 dias
+Masculino,20,1,Grado en Matematicas,Palma,5,Entre 1 y 2 horas,Mañana y Tarde,Biblioteca,3,No,De 1 a 7 dias
+Masculino,19,2,Grado en Matematicas,Marratxi,5,Mas de 2 horas,Tarde,Casa,1,Si,De 1 a 7 dias
+Masculino,19,1,Grado en Matematicas,Palma,6,Mas de 2 horas,Tarde y Noche,Casa y Biblioteca,3,No,De 8 a 14 dias
+Femenino,19,2,Grado en Matematicas,Palma,6,Mas de 2 horas,Mañana y Tarde,Casa,2,No,De 1 a 7 dias
+Femenino,19,1,Doble titulacion: Grado de Matematicas y Grado de Ingenieria Telematica,Santa Maria del Cami,5,Entre 1 y 2 horas,Mañana y Tarde,Biblioteca,2,Si,De 1 a 7 dias
+Masculino,19,3,Grado en Matematicas,Palma,4,Entre 1 y 2 horas,Tarde y Noche,Casa,1,No,De 8 a 14 dias
+Masculino,21,3,Grado de Ingenieria Informatica,Manacor,5,Entre 1 y 2 horas,Mañana,Casa,1,Si,De 8 a 14 dias
+Masculino,22,4,Doble titulacion: Grado de Matematicas y Grado de Ingenieria Telematica,Palma,6,Mas de 2 horas,Tarde,Biblioteca,2,Si,De 8 a 14 dias
+Masculino,23,4,Grado en Matematicas,Palma,1,Menos de 1 hora,Tarde,Biblioteca,1,No,De 1 a 7 dias
+Masculino,22,4,Grado en Matematicas,Palma,5,Entre 1 y 2 horas,Mañana,Casa,2,Si,De 8 a 14 dias
+Masculino,22,4,Grado en Matematicas,Palma,6,Mas de 2 horas,Mañana,Casa,3,No,De 1 a 7 dias
+Masculino,22,4,Doble titulacion: Grado de Matematicas y Grado de Ingenieria Telematica,Palma,2,Entre 1 y 2 horas,Noche,Casa,1,No,De 1 a 7 dias
+Femenino,24,4,Grado en Ingenieria Telematica,Palma,5,Mas de 2 horas,Mañana y Tarde,Biblioteca,1,No,De 1 a 7 dias
+Masculino,19,2,Grado en Ingenieria Telematica,Palma,7,Entre 1 y 2 horas,Mañana,Casa,1,No,De 8 a 14 dias
+Femenino,21,2,Grado en Edificacion,Campanet,3,Mas de 2 horas,Noche,Casa,1,Si,De 1 a 7 dias
+Masculino,21,3,Grado de Ingenieria Informatica,Palma,3,Entre 1 y 2 horas,Tarde y Noche,Casa,1,Si,De 1 a 7 dias
+Femenino,20,2,Grado en Edificacion,Bunyola,3,Mas de 2 horas,Noche,Casa,2,Si,De 1 a 7 dias
+Femenino,21,4,Grado en Matematicas,Llucmajor,5,Mas de 2 horas,Mañana y Tarde,Casa,2,Si,De 1 a 7 dias
+Masculino,25,4,Grado de Ingenieria Informatica,Palma,4,Mas de 2 horas,Noche,Casa,1,Si,De 8 a 14 dias
+Masculino,23,4,Grado de Ingenieria Informatica,Palma,1,Entre 1 y 2 horas,Mañana,Casa,3,No,De 8 a 14 dias
+Masculino,22,4,Grado de Ingenieria Informatica,Pollença,1,Menos de 1 hora,Mañana y Tarde,Casa,1,No,De 15 a 21 dias
+Femenino,20,3,Grado de Ingenieria Informatica,Palma,4,Mas de 2 horas,Mañana y Tarde,Casa,1,Si,De 15 a 21 dias
+Masculino,22,3,Grado de Ingenieria Informatica,Manacor,6,Entre 1 y 2 horas,Tarde,Casa,1,No,De 8 a 14 dias
+Masculino,32,3,Grado de Ingenieria Informatica,Arenal,5,Mas de 2 horas,Tarde,Casa,1,Si,De 8 a 14 dias
+Masculino,24,4,Grado de Ingenieria Informatica,Palma,5,Mas de 2 horas,Mañana,Aula de informatica ,2,No,De 8 a 14 dias
+Masculino,21,1,Grado en Edificacion,Son Servera,2,Entre 1 y 2 horas,Tarde,Biblioteca,3,No,De 1 a 7 dias
+Masculino,18,1,Grado en Matematicas,Binissalem,6,Entre 1 y 2 horas,Tarde,Casa,1,No,De 8 a 14 dias
+Masculino,19,1,Grado en Matematicas,Residencia Uib,6,Mas de 2 horas,Tarde,Biblioteca,3,Si,De 8 a 14 dias
+Masculino,20,2,Grado en Edificacion,Santa Ponsa,5,Mas de 2 horas,Mañana y Noche,Casa,3,No,De 1 a 7 dias
+Femenino,43,2,Grado en Edificacion,Palma,2,Entre 1 y 2 horas,Noche,Casa,3,Si,De 1 a 7 dias
+Masculino,19,2,Grado en Edificacion,Palma,5,Mas de 2 horas,Mañana y Tarde,Casa,2,No,De 8 a 14 dias
+Masculino,19,1,Grado en Edificacion,Sineu,3,Entre 1 y 2 horas,Tarde y Noche,Casa,1,Si,De 1 a 7 dias
+Masculino,22,2,Grado en Edificacion,Inca,3,Entre 1 y 2 horas,Tarde,Biblioteca,4,No,De 1 a 7 dias
+Masculino,21,2,Grado en Edificacion,Andratx,2,Menos de 1 hora,Mañana y Noche,Casa,1,Si,De 1 a 7 dias
+Femenino,18,1,Grado en Edificacion,Sant Llorenç,5,Entre 1 y 2 horas,Mañana y Tarde,Casa,1,Si,De 15 a 21 dias
+Femenino,29,3,Grado en Edificacion,Inca,7,Mas de 2 horas,Noche,Casa,2,Si,De 8 a 14 dias
+Femenino,18,1,Grado en Edificacion,Palma,2,Entre 1 y 2 horas,Tarde,Casa,3,Si,De 1 a 7 dias
+Masculino,19,2,Grado en Ingenieria Telematica,Palma,7,Entre 1 y 2 horas,Mañana,Casa,1,No,De 8 a 14 dias
+Masculino,19,2,Grado en Ingenieria Electronica Industrial y Automatica,Palma,7,Mas de 2 horas,Tarde,Casa,2,No,De 1 a 7 dias
+Masculino,19,2,Grado en Ingenieria Electronica Industrial y Automatica,Palma,1,Menos de 1 hora,Mañana,Casa,1,Si,De 8 a 14 dias
+Masculino,19,1,Grado de Ingenieria Informatica,Palma,3,Menos de 1 hora,Tarde y Noche,Casa,5,No,De 1 a 7 dias
+Masculino,18,1,Grado de Ingenieria Informatica,Palma,4,Mas de 2 horas,Tarde y Noche,Casa,3,Si,De 8 a 14 dias
+Masculino,19,1,Grado de Ingenieria Informatica,Alcudia,3,Mas de 2 horas,Tarde,Casa,5,No,De 8 a 14 dias
+Masculino,19,1,Grado de Ingenieria Informatica,Marratxi,4,Mas de 2 horas,Tarde,Casa,4,No,De 1 a 7 dias
+Masculino,19,1,Grado de Ingenieria Informatica,Palma,6,Mas de 2 horas,Mañana y Tarde,Casa,4,No,De 1 a 7 dias
+Masculino,19,2,Grado en Matematicas,Palma,7,Mas de 2 horas,Tarde,Casa,3,No,De 1 a 7 dias
+Masculino,20,3,Grado en Matematicas,Palma,3,Mas de 2 horas,Tarde,Biblioteca,1,No,De 1 a 7 dias
+Masculino,28,4,Grado en Matematicas,Santa Ponsa,6,Mas de 2 horas,Mañana y Tarde,Biblioteca,4,No,De 8 a 14 dias
+Masculino,19,1,Grado de Ingenieria Informatica,Ariany,5,Entre 1 y 2 horas,Tarde,Casa,2,Si,De 8 a 14 dias
+Masculino,18,1,Grado de Ingenieria Informatica,Santa Maria del Cami,2,Entre 1 y 2 horas,Mañana y Tarde,Casa y Biblioteca,1,No,De 1 a 7 dias
+Masculino,20,3,Grado de Ingenieria Informatica,Campos,5,Entre 1 y 2 horas,Tarde,Casa,3,No,De 1 a 7 dias
+Masculino,18,1,Doble titulacion: Grado de Matematicas y Grado de Ingenieria Telematica,Palma,7,Mas de 2 horas,Mañana y Tarde,Biblioteca,1,No,De 8 a 14 dias
+Masculino,19,2,Grado en Matematicas,Valldemossa,5,Entre 1 y 2 horas,Tarde,Casa,3,No,De 1 a 7 dias
+Masculino,18,1,Grado en Matematicas,Marratxi,5,Entre 1 y 2 horas,Tarde,Biblioteca,2,Si,De 1 a 7 dias
+Masculino,18,1,Grado en Matematicas,Arenal,4,Mas de 2 horas,Tarde y Noche,Biblioteca,4,No,De 1 a 7 dias
+Masculino,18,1,Grado en Matematicas,Palma,5,Entre 1 y 2 horas,Tarde,Casa,3,No,De 8 a 14 dias
+Femenino,18,1,Grado en Matematicas,Palma,5,Entre 1 y 2 horas,Mañana y Tarde,Casa,3,No,De 1 a 7 dias
+Masculino,19,1,Grado en Matematicas,Palma,3,Menos de 1 hora,Tarde y Noche,Casa,2,No,De 8 a 14 dias
+Masculino,19,2,Grado en Matematicas,Palma,3,Entre 1 y 2 horas,Mañana y Tarde,Casa,2,No,De 1 a 7 dias
+Masculino,19,1,Doble titulacion: Grado de Matematicas y Grado de Ingenieria Telematica,Palma,1,Entre 1 y 2 horas,Tarde,Casa,2,No,De 1 a 7 dias
+Masculino,19,2,Doble titulacion: Grado de Matematicas y Grado de Ingenieria Telematica,Palma,6,Mas de 2 horas,Tarde,Casa,2,No,De 1 a 7 dias
+Masculino,19,1,Grado en Matematicas,Palma,6,Mas de 2 horas,Mañana y Tarde,Casa,3,No,De 1 a 7 dias
+Femenino,19,2,Grado en Matematicas,Alcudia,5,Mas de 2 horas,Tarde,Biblioteca,2,No,De 1 a 7 dias
+Femenino,18,1,Grado en Matematicas,Palma,7,Entre 1 y 2 horas,Mañana y Tarde,Casa,3,Si,De 8 a 14 dias
+Femenino,19,2,Grado en Matematicas,Palma,6,Mas de 2 horas,Tarde,Biblioteca,1,No,De 1 a 7 dias
+Femenino,18,1,Grado en Matematicas,Llucmajor,6,Mas de 2 horas,Mañana y Tarde y Noche,Biblioteca,4,Si,De 1 a 7 dias
+Femenino,19,2,Grado en Matematicas,Palma,7,Mas de 2 horas,Tarde,Casa,1,No,De 15 a 21 dias
+Masculino,20,1,Grado en Matematicas,Palma,5,Mas de 2 horas,Tarde,Biblioteca,4,No,De 8 a 14 dias
+Masculino,19,1,Grado en Matematicas,Campos,6,Mas de 2 horas,Tarde,Casa,1,Si,De 1 a 7 dias
+Masculino,18,1,Grado en Matematicas,Palma,7,Mas de 2 horas,Tarde,Casa,1,No,De 15 a 21 dias
+Masculino,18,1,Grado en Matematicas,Palma,5,Mas de 2 horas,Tarde,Biblioteca,4,Si,De 1 a 7 dias
+Masculino,19,1,Grado de Ingenieria Informatica,Marratxi,2,Entre 1 y 2 horas,Tarde,Casa,1,No,De 1 a 7 dias
+Masculino,18,1,Grado en Ingenieria Electronica Industrial y Automatica,Palma,0,Entre 1 y 2 horas,Tarde,Casa,3,No,De 1 a 7 dias
+Masculino,19,1,Grado en Ingenieria Electronica Industrial y Automatica,Marratxi,4,Entre 1 y 2 horas,Tarde,Casa,2,Si,De 1 a 7 dias
+Masculino,18,1,Grado en Ingenieria Electronica Industrial y Automatica,Palma,4,Menos de 1 hora,Tarde y Noche,Casa,1,Si,De 1 a 7 dias
+Masculino,20,3,Grado de Ingenieria Agroalimentaria y del Medio Rural,Palma,4,Entre 1 y 2 horas,Tarde,Casa,3,Si,De 8 a 14 dias
+Femenino,23,4,Grado de Ingenieria Informatica,Palmanova,5,Mas de 2 horas,Tarde y Noche,Biblioteca,2,Si,De 15 a 21 dias
+Masculino,24,3,Grado en Ingenieria Telematica,Marratxi,3,Entre 1 y 2 horas,Tarde,Casa,4,Si,De 15 a 21 dias
+Masculino,19,2,Grado de Ingenieria Agroalimentaria y del Medio Rural,Arenal,5,Mas de 2 horas,Mañana y Tarde,Biblioteca,4,Si,De 15 a 21 dias
+Femenino,22,3,Grado en Ingenieria Electronica Industrial y Automatica,Palma,6,Entre 1 y 2 horas,Tarde y Noche,Casa,3,Si,De 15 a 21 dias
+Masculino,20,3,Grado en Edificacion,Residencia Uib,6,Mas de 2 horas,Mañana y Tarde,Biblioteca,3,No,De 1 a 7 dias
+Femenino,18,1,Grado de Ingenieria Agroalimentaria y del Medio Rural,Palma,5,Entre 1 y 2 horas,Tarde,Biblioteca,4,No,De 15 a 21 dias
+Masculino,23,4,Grado de Ingenieria Agroalimentaria y del Medio Rural,Algaida,4,Menos de 1 hora,Mañana,Casa,1,Si,De 8 a 14 dias
+Femenino,23,4,Grado de Ingenieria Informatica,Santa Maria del Cami,4,Mas de 2 horas,Tarde y Noche,Biblioteca,5,Si,De 1 a 7 dias
+Femenino,24,4,Grado en Ingenieria Telematica,Inca,5,Entre 1 y 2 horas,Tarde y Noche,Biblioteca,3,Si,De 15 a 21 dias
+Masculino,20,3,Grado en Ingenieria Electronica Industrial y Automatica,Santa Ponsa,3,Menos de 1 hora,Noche,Casa,1,Si,De 8 a 14 dias
+Femenino,18,1,Grado en Edificacion,Palma,6,Mas de 2 horas,Tarde y Noche,Casa,3,No,De 8 a 14 dias
+Masculino,23,4,Grado de Ingenieria Informatica,Palma,5,Entre 1 y 2 horas,Mañana y Tarde,Casa,2,Si,De 15 a 21 dias
+Femenino,19,2,Doble titulacion: Grado de Matematicas y Grado de Ingenieria Telematica,Palma,4,Mas de 2 horas,Tarde,Biblioteca,4,Si,De 8 a 14 dias
+Masculino,22,3,Grado de Ingenieria Informatica,Arenal,5,Mas de 2 horas,Tarde y Noche,Casa,1,Si,De 1 a 7 dias
+Masculino,24,4,Grado en Edificacion,Inca,4,Menos de 1 hora,Mañana,Biblioteca,1,Si,De 15 a 21 dias
+Femenino,18,1,Grado de Ingenieria Informatica,Residencia Uib,5,Mas de 2 horas,Tarde y Noche,Biblioteca,4,Si,De 15 a 21 dias
+Masculino,20,3,Grado en Ingenieria Electronica Industrial y Automatica,Palma,5,Entre 1 y 2 horas,Tarde y Noche,Casa,3,Si,De 1 a 7 dias
+Femenino,22,4,Grado de Ingenieria Informatica,Marratxi,5,Mas de 2 horas,Tarde,Casa,2,Si,De 8 a 14 dias
+Masculino,20,3,Grado de Ingenieria Agroalimentaria y del Medio Rural,Magaluf ,4,Entre 1 y 2 horas,Tarde,Casa,1,Si,De 15 a 21 dias
+Masculino,22,4,Grado de Ingenieria Informatica,Palma,6,Mas de 2 horas,Tarde y Noche,Casa,1,Si,De 8 a 14 dias
+Femenino,20,3,Grado de Ingenieria Informatica,Palma,4,Entre 1 y 2 horas,Tarde,Biblioteca,3,Si,De 15 a 21 dias
+Masculino,20,4,Grado de Ingenieria Informatica,Palma,4,Mas de 2 horas,Tarde,Casa,3,Si,De 8 a 14 dias
+Masculino,18,1,Grado de Ingenieria Informatica,Palma,3,Mas de 2 horas,Tarde,Biblioteca,5,Si,Mas de 21 dias
+Femenino,20,3,Grado en Ingenieria Telematica,Palma,4,Entre 1 y 2 horas,Mañana,Casa,1,Si,De 1 a 7 dias
+Masculino,23,4,Grado de Ingenieria Agroalimentaria y del Medio Rural,Sineu,5,Entre 1 y 2 horas,Tarde y Noche,Biblioteca,3,Si,De 8 a 14 dias
+Masculino,20,4,Grado en Ingenieria Electronica Industrial y Automatica,Petra,4,Menos de 1 hora,Noche,Casa,1,No,De 8 a 14 dias
+Femenino,18,1,Grado en Ingenieria Electronica Industrial y Automatica,Palma,6,Mas de 2 horas,Tarde,Casa,2,Si,De 8 a 14 dias
+Masculino,20,3,Grado en Edificacion,Palmanova,4,Entre 1 y 2 horas,Tarde y Noche,Biblioteca,2,Si,De 1 a 7 dias
+Masculino,23,4,Grado en Ingenieria Telematica,Palma,5,Mas de 2 horas,Tarde,Casa,3,Si,De 15 a 21 dias
+Masculino,19,2,Grado de Ingenieria Informatica,Palma,5,Entre 1 y 2 horas,Tarde,Biblioteca,4,No,De 15 a 21 dias
+Masculino,18,1,Grado en Edificacion,Residencia Uib,6,Mas de 2 horas,Tarde y Noche,Biblioteca,4,Si,Mas de 21 dias
+Femenino,19,2,Grado de Ingenieria Agroalimentaria y del Medio Rural,Palma,3,Menos de 1 hora,Noche,Casa,1,Si,De 1 a 7 dias
+Masculino,22,4,Grado de Ingenieria Informatica,Algaida,5,Entre 1 y 2 horas,Tarde,Casa,3,No,De 8 a 14 dias
+Femenino,23,4,Grado en Edificacion,Palma,4,Menos de 1 hora,Tarde y Noche,Casa,2,Si,De 15 a 21 dias

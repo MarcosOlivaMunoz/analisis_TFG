@@ -1,0 +1,286 @@
+---
+format: html
+embed-resources: true
+lang: ES
+---
+
+```{r Setup, include=FALSE}
+knitr::opts_chunk$set(echo=FALSE)
+library(tidyverse)
+library(ggpubr)
+```
+
+# Contexto
+
+## Pretest
+
+P1. ¿Cuál de los siguientes datos se puede considerar como **cuantitativo discreto**?
+
+* ["¿Cuántos hermanos tienes?"]{.mark}
+* "¿Tienes hermanos?"
+* "¿Cuál de las siguientes opciones corresponde al número de hermanos que tienes? Entre 0 y 1 hermanos, Entre 2 y 3 hermanos, 4 hermanos o más"
+* "¿Cuál es tu altura (en centímetros)?"
+
+P2. ¿Cuál de los siguientes datos se puede considerar como **cuantitativo continuo**?
+
+* "¿Cuántos hermanos tienes?"
+* "¿Tienes hermanos?"
+* "¿Cuál de las siguientes opciones corresponde al número de hermanos que tienes? Entre 0 y 1 hermanos, Entre 2 y 3 hermanos, 4 hermanos o más"
+* ["¿Cuál es tu altura (en centímetros)?"]{.mark}
+
+P3. ¿Cuál de los siguientes datos se puede considerar como **cualitativo**?
+
+* "¿Cuántos hermanos tienes?"
+* ["¿Tienes hermanos?"]{.mark}
+* "¿Cuál de las siguientes opciones corresponde al número de hermanos que tienes? Entre 0 y 1 hermanos, Entre 2 y 3 hermanos, 4 hermanos o más"
+* "¿Cuál es tu altura (en centímetros)?"
+
+P4. Unos investigadores creen que los centros educativos privados tienen mejores notas de matemáticas que los centros públicos. Para probar su hipótesis, disponen de la nota media por asignatura (matemáticas, castellano y catalán) de cada estudiante de los centros participantes. ¿Cuál debería ser la variable de interés en este estudio?
+
+* La nota media de cada centro participante en el estudio
+* La nota media de los centros públicos y privados participantes en el estudio
+* [La nota media de matemáticas de cada estudiante de cada centro participante en el estudio]{.mark}
+* La nota media de matemáticas de cada centro participante en el estudio
+
+P5. ¿Cuál es la mediana de los siguientes valores?
+
+*4, 7, 11, 11, 12, 18, 20, 25, 27*
+
+* 11
+* [12]{.mark}
+* 15
+* 18
+
+P6. Queremos comparar el alcance del alcoholismo en Barcelona y en Palma. Para ello, hemos entrevistado a residentes de ambas ciudades y hemos registrado sus respuestas. Para procesar estos datos, ¿Qué es más adecuado?
+
+* Comparar el número de alcohólicos en Palma y en Barcelona
+* [Comparar el porcentaje de alcohólicos en Palma y en Barcelona]{.mark}
+* Comparar el número medio de alcohólicos en Palma y en Barcelona
+* Ninguna de las respuestas es correcta
+
+P7. Un grupo de investigación quiere ver cuál tipo de ordenador es el más frecuente en los institutos. Después de recopilar los datos, han decidido representarlos para poder comunicar sus hallazgos. ¿Cuál de los siguientes gráficos es el más adecuado?
+
+```{r Graficos_pretest, include=FALSE}
+source("scripts/graficos_pretest.R")
+```
+
+* Un gráfico circular
+```{r Circular_pretest, fig.height=3, fig.width=5}
+circular_pretest
+```
+* [Un diagrama de barras]{.mark}
+```{r Barras_pretest, fig.height=3, fig.width=5}
+barras_pretest
+```
+* Una nube de puntos
+```{r Puntos_pretest, fig.height=3, fig.width=5}
+puntos_pretest
+```
+* Un gráfico de línea
+```{r Linea_pretest, fig.height=3, fig.width=5}
+linea_pretest
+```
+
+## Test 1
+
+P1. ¿La pregunta "A lo largo de la última semana, ¿Cuántas frutas y verduras has comido?" es estadística?
+
+* Sí
+* [No]{.mark}
+
+P2. ¿La pregunta "Desde el inicio de 2024, ¿Cuántas familias han perdido a un familiar?" es estadística?
+
+* [Sí]{.mark}
+* No
+
+P3. Clasifica la pregunta "¿Cuánto tiempo le dedicas al estudio diariamente?"
+
+* Cualitativa
+* Cuantitativa discreta
+* [Cuantitativa continua]{.mark}
+
+P4. Clasifica la pregunta "¿Cuales crees que son las mejores cualidades de este instituto?"
+
+* [Cualitativa]{.mark}
+* Cuantitativa discreta
+* Cuantitativa continua
+
+P5. Clasifica la pregunta "¿Cuantas veces vas al baño durante la noche?"
+
+* Cualitativa
+* [Cuantitativa discreta]{.mark}
+* Cuantitativa continua
+
+## Test 2
+
+P1. ¿La pregunta "¿Cuánto tiempo usas el teléfono móvil cada semana?" es estadística?
+
+* [Sí]{.mark}
+* No
+
+P2. Clasifica la pregunta "¿Cuál es el peso de un plátano de Canarias?"
+
+* Cualitativa
+* Cuantitativa discreta
+* [Cuantitativa continua]{.mark}
+
+P3. Clasifica la pregunta "¿Cuál es el precio de un plátano de Canarias?"
+
+* Cualitativa
+* [Cuantitativa discreta]{.mark}
+* Cuantitativa continua
+
+P4. El Gobierno de las Islas Baleares está interesado en determinar si la población piensa que el gasto en alimentación sube en las temporadas altas de turismo. Selecciona la población objeto de este estudio.
+
+* Los mayores de 18 años en las Islas Baleares durante la temporada alta de turismo
+* [Los residentes de las Islas Baleares responsables de hacer la compra]{.mark}
+* Los residentes de Mallorca que trabajan
+* Los residentes de Mallorca mayores de 18 años
+
+P5. Sobre la situación anterior, suponiendo que siempre entrevistamos a individuos pertenecientes a la población objeto de estudio, ¿Qué método de muestreo es más conveniente?
+
+* Seleccionar gente al azar que camine por el Paseo Marítimo
+* Seleccionar a personas que están comprando en Mercadona
+* Seleccionar gente al azar en cada municipio de las Islas Baleares
+* [Seleccionar gente proporcional a cada municipio de las Islas Baleares]{.mark}
+
+P6. ¿Cuál es la fórmula de tamaño de la muestra para poblaciones infinitas?
+*n* = Tamaño de la muestra
+*e* = Error muestral
+*N* = Tamaño de la población
+
+* [Fórmula 1]{.mark}
+![](images/test2/r1.png){fig-align="left"}
+* Fórmula 2
+![](images/test2/r2.png){fig-align="left"}
+* Fórmula 3
+![](images/test2/r3.png){fig-align="left"}
+* No hay fórmula, se busca el valor en la tabla
+
+![](images/test2/r4.png){fig-align="left"}
+
+P7. ¿Qué tipo de respuesta admite esta pregunta?
+
+![](images/test2/pregunta7.png){fig-align="center"}
+
+* Respuesta abierta
+* [Escala lineal]{.mark}
+* Opción múltiple
+* Opción única
+
+P8. ¿La pregunta de la imagen está bien formulada?
+
+![](images/test2/pregunta8.png){fig-align="center"}
+
+* Sí, la pregunta es correcta
+* No, porque no ofrece suficientes opciones
+* [No, porque está abierta a interpretación]{.mark}
+* Sí, siempre y cuando se especifique que los números indican la cantidad de veces que asistes a la semana
+
+P9. ¿La pregunta de la imagen está bien formulada?
+
+![](images/test2/pregunta9.png){fig-align="center"}
+
+* Sí, la pregunta es correcta
+* No, porque el vocabulario es inadecuado
+* No, porque es demasiado ambigua
+* [Sí, siempre y cuando se reformule para que no esté cargada]{.mark}
+
+## Test 3
+
+P1. Clasifica la pregunta "¿Cuál es la distancia entre tu casa y el instituto en el que estudias?"
+
+* Cualitativa
+* Cuantitativa discreta
+* [Cuantitativa continua]{.mark}
+
+P2. Unos estudiantes de secundaria quieren saber los hábitos de descanso de otros alumnos de secundaria en su ciudad. Selecciona la población objeto de este estudio.
+
+* Sus compañeros de clase
+* [Los alumnos de ESO de todos los institutos de la ciudad]{.mark}
+* Las familias con al menos un hijo que cursen actualmente secundaria
+* Todos los adolescentes entre 12 y 18 años
+
+P3. ¿La pregunta de la imagen está bien formulada?
+
+![](images/test3/pregunta3.png){fig-align="center"}
+
+* [Sí, la pregunta es correcta]{.mark}
+* No, porque está abierta a interpretación
+* No, porque debería dar unas opciones concretas
+* Sí, siempre y cuando se reformule para que no esté cargada
+
+P4. Un archivo del instituto muestra las notas de los alumnos en el examen final de matemáticas de una clase concreta. Las notas fueron:
+
+\- 6 suspensos
+\- 7 suficientes
+\- 12 notables
+\- 4 excelentes
+
+¿Cuál es el mejor estimador de tendencia central para estos datos?
+
+* El primer cuartil
+* La media
+* [La mediana]{.mark}
+* El tercer cuartil
+
+```{r Graficos_test3, include=FALSE}
+source("scripts/graficos_test3.R")
+```
+
+
+P5. ¿Cuál gráfico es el más adecuado?
+
+```{r P5_test3}
+pregunta5_test3
+```
+
+
+* El gráfico A
+* El gráfico B
+* Ambos gráficos son adecuados
+* Ningún gráfico es adecuado; sería mejor hacer otro tipo
+
+P6. El siguiente *gráfico de cajas (boxplot)* representa los salarios, en euros (€), de los empleados de una empresa. ¿Cuál afirmación es correcta sobre estos datos?
+
+```{r P6_test3, fig.width=3, fig.align='center'}
+pregunta6_test3
+```
+
+* Existen un par de valores atípicos y deberíamos eliminarlos sin dudar
+* La disparidad entre la media y la mediana indica que los datos se distribuyen de manera simétrica
+* [El 50% central de los empleados cobran entre 1500€ y 2000€]{.mark}
+* El 25% superior de los empleados cobran más de 1500€
+
+P7. Observando el siguiente *gráfico de barras*, ¿Cuál afirmación es correcta sobre estos datos?
+
+```{r P7_test3, fig.align='center'}
+pregunta7_test3
+```
+
+* En frecuencia relativa, los hombres tiene más demencia que las mujeres]{.mark}
+* En frecuencia absoluta, las mujeres tienen menos alzhéimer que los hombres
+* En frecuencia absoluta, no se puede apreciar una diferencia significativa de Alzheimer por sexo
+* En frecuencia relativa, los hombres tienen menos alzhéimer que las mujeres
+
+P8. Observando el siguiente *gráfico de dispersión*, ¿Cuál afirmación es correcta sobre estos datos?
+
+```{r P8_test3, fig.align='center'}
+pregunta8_test3
+```
+
+* Ambas variables pueden estar relacionadas linealmente
+* No hay relación entre ambas variables
+* [Existe un valor influyente que cambia la regresión]{.mark}
+* No tiene sentido que hayan valores negativos en el gráfico
+
+P9. Observando los siguientes *gráficos de cajas (boxplots)*, ¿Cuál afirmación es correcta sobre estos datos?
+
+```{r P9_test3, fig.align='center'}
+pregunta9_test3
+```
+
+* Por los valores atípicos, ambas clases tienen la misma dispersión
+* Por la diferencia de las medianas, 4ºA presenta mayor dispersión que 4ºB
+* [Por los bigotes, el 4ºB tiene mayor dispersión que el 4ºA]{.mark}
+* Por límites de las cajas, el 4ºB tiene mayor dispersión que el 4ºA

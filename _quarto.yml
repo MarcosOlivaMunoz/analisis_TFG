@@ -1,0 +1,28 @@
+project:
+  type: book
+  output-dir: docs
+
+book:
+  title: "Análisis TFG"
+  author: "Marcos Oliva"
+  date: last-modified
+  reader-mode: true
+  page-footer:
+    left: |
+      Análisis TFG
+    right: |
+     Este libro se ha creado con  <a href="https://quarto.org/">Quarto</a>.
+  cover-image: images/quarto.png
+  favicon: images/quarto2.png
+#  repo-url: https://github.com
+#  repo-branch: main
+#  repo-actions: [edit, issue]
+  chapters:
+    - index.qmd
+    - contexto.qmd
+    - analisis_exploratiorio.qmd
+
+format:
+  html:
+    theme: cosmo
+    lang: es 
