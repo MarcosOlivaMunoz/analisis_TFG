@@ -26,6 +26,6 @@ format:
   html:
     include-in-header: 
     - text: |
-      <link rel="icon" type="image/png" href="images/quarto2.png" sizes="96x96" />
+      <link rel="icon" type="image/png" href="images/quarto2.png" />
     theme: cosmo
     lang: es 
