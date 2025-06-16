@@ -12,9 +12,8 @@ book:
       Análisis TFG
     right: |
      Este libro se ha creado con  <a href="https://quarto.org/">Quarto</a>.
-  cover-image: images/quarto.png
   favicon: images/quarto2.png
-  site-url: https://marcosolivamunoz.github.io/analisis_TFG/
+  site-url: https://marcosolivamunoz.github.io/analisis_TFG
   repo-url: https://github.com/MarcosOlivaMunoz/analisis_TFG
   repo-branch: main
   repo-actions: [edit, issue]
@@ -25,5 +24,8 @@ book:
 
 format:
   html:
+    include-in-header: 
+    - text: |
+      <link rel="icon" type="image/png" href="images/quarto2.png" sizes="96x96" />
     theme: cosmo
     lang: es 
