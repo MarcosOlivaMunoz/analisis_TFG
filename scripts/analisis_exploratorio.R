@@ -29,18 +29,21 @@ plot1a <- ggplot(data=pretest1,aes(x=P1)) +
   guides(fill = "none") + 
   scale_y_continuous(limits = c(0,30), breaks = seq(0,30,4)) +
   labs(x="P1: Cuantitativo Discreto", y="") + 
-  theme_minimal()
+  theme_minimal() + 
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))
 plot1b <- ggplot(data=pretest1,aes(x=P2, fill=P2)) + 
   geom_bar(position = "dodge", fill=c("#CC3333","#CC3333","#CC3333","#33CC33")) + 
   scale_y_continuous(limits = c(0,30), breaks = seq(0,30,4)) +
   labs(x="P2: Cuantitativo Continuo", y="") + 
-  theme_minimal()
+  theme_minimal() + 
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))
 plot1c <- ggplot(data=pretest1,aes(x=P3, fill=P3)) + 
   geom_bar(position = "dodge", fill=c("#CC3333","#33CC33","#CC3333","#CC3333")) + 
   guides(fill = "none") + 
   scale_y_continuous(limits = c(0,30), breaks = seq(0,30,4)) +
   labs(x="P3: Cualitativo", y="") + 
-  theme_minimal()
+  theme_minimal() + 
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))
 plot1 <- ggarrange(plot1a, plot1b, plot1c, ncol=3, align = "v") %>% 
   annotate_figure(., top = text_grob("Cuantitativo o Cualitativo (pretest, frecuencia absoluta)",
                                      color = "black", face = "bold", size = 14))
