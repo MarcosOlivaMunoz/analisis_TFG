@@ -3,10 +3,10 @@ library(ltm)
 library(psych)
 library(eRm)
 library(difR)
+library(mirt)
+library(ggmirt)
 
-setwd("C:/Users/marco/OneDrive/Desktop/TFG/R")
-
-source("limpieza_datos_bin.R")
+source("scripts/limpieza_datos_bin.R")
 
 # ---=== Análisis exploratorio ===---
 # PRETEST
@@ -62,15 +62,24 @@ plot(pretest_2p, item=c(1,2,3,5))
 
 # 3-parameter
 # Cualitativo o Cuantitativo
-par(mfrow=c(1,1))
-pretest_2p <- ltm(pretestBIN ~ z1)
-plot(pretest_2p, item=c(1,2,3,5))
 
+# Fitting the model
+unimodel <- 'F1 = 1-6'
+fit3PL <- mirt(data = pretestBIN, 
+              model = unimodel,
+              itemtype = "3PL",
+              verbose = FALSE)
+summary(fit3PL)
+# IRT pararmeter
+params3PL <- coef(fit3PL, IRTparms = TRUE, simplify = TRUE)
+round(params3PL$items, 2)
+# Model, person & item fit
+M2(fit3PL)
+itemfit(fit3PL)
+itemfit(fit3PL, fit_stats = "infit")
+itemfitPlot(fit3PL)
+itempersonMap(fit3PL)
 
-# lmod <- ltm::tpm(pretestBIN, IRT.param = FALSE)
-# unimodel <- 'F1 = 1-6'
-# fit3PL <- mirt(data = pretestBIN, 
-#                model = unimodel,
-#                method = "EM",
-#                verbose = FALSE)
-# fit3PL
+tracePlot(fit3PL)
+tracePlot(fit3PL, facet = F, legend = T)
+itemInfoPlot(fit3PL, legend = T) + scale_color_brewer(palette = "Set3")
