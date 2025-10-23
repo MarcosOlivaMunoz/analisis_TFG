@@ -54,7 +54,37 @@
     "href": "analisis_exploratiorio.html",
     "title": "3  Análisis exploratorio",
     "section": "",
-    "text": "Análisis de las preguntas 1, 2 y 3 del pretest\n\n\n\n\n\n\n\n\n\nAvance de las respuestas correctas a lo largo del estudio | Distinción entre Cuantitativo y Cualitativo\n\n\n\n\n\n\n\n\n\nAvance de las respuestas correctas a lo largo del estudio | Preguntas estadísticas",
+    "text": "3.1 Conocimientos previos: pretest",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Análisis exploratorio</span>"
+    ]
+  },
+  {
+    "objectID": "analisis_exploratiorio.html#conocimientos-previos-pretest",
+    "href": "analisis_exploratiorio.html#conocimientos-previos-pretest",
+    "title": "3  Análisis exploratorio",
+    "section": "",
+    "text": "3.1.1 Análisis de las preguntas 1, 2 y 3 del pretest\n\n\n\n\n\n\n\n\n\n\n\n\n\n3.1.2 Análisis de la pregunta 4 del pretest\n\n\n\n3.1.3 Análisis de la pregunta 5 del pretest",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Análisis exploratorio</span>"
+    ]
+  },
+  {
+    "objectID": "analisis_exploratiorio.html#evolución-de-los-conocimientos-por-arquetipo-de-pregunta-pretest-test1-test2-y-test-3",
+    "href": "analisis_exploratiorio.html#evolución-de-los-conocimientos-por-arquetipo-de-pregunta-pretest-test1-test2-y-test-3",
+    "title": "3  Análisis exploratorio",
+    "section": "3.2 Evolución de los conocimientos por arquetipo de pregunta: pretest, test1, test2 y test 3",
+    "text": "3.2 Evolución de los conocimientos por arquetipo de pregunta: pretest, test1, test2 y test 3\n\n3.2.1 Avance de las respuestas correctas a lo largo del estudio | Distinción entre Cuantitativo y Cualitativo\n\n\n# A tibble: 6 × 6\n  Pregunta Test    Respuesta  F.abs count F.rel\n  &lt;ord&gt;    &lt;fct&gt;   &lt;fct&gt;      &lt;int&gt; &lt;int&gt; &lt;dbl&gt;\n1 P1.0     Pretest Incorrecto    29    56  51.8\n2 P1.0     Pretest Correcto      27    56  48.2\n3 P2.0     Pretest Incorrecto    38    56  67.9\n4 P2.0     Pretest Correcto      18    56  32.1\n5 P3.0     Pretest Incorrecto    38    56  67.9\n6 P3.0     Pretest Correcto      18    56  32.1\n\n\n\n\n\n\n\n\n\n\n\n3.2.2 Avance de las respuestas correctas a lo largo del estudio | Preguntas estadísticas",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Análisis exploratorio</span>"
+    ]
+  },
+  {
+    "objectID": "analisis_exploratiorio.html#evolución-de-los-conocimientos-por-arquetipo-de-pregunta",
+    "href": "analisis_exploratiorio.html#evolución-de-los-conocimientos-por-arquetipo-de-pregunta",
+    "title": "3  Análisis exploratorio",
+    "section": "3.2 Evolución de los conocimientos por arquetipo de pregunta",
+    "text": "3.2 Evolución de los conocimientos por arquetipo de pregunta\n\n3.2.1 Avance de las respuestas correctas a lo largo del estudio | Distinción entre Cuantitativo y Cualitativo\n\n\n\n\n\n\n\n\n\n\n\n3.2.2 Avance de las respuestas correctas a lo largo del estudio | Preguntas estadísticas",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Análisis exploratorio</span>"
     ]
