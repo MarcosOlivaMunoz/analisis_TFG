@@ -19,7 +19,7 @@ source("scripts/datos_expl.R")
 
 ### Análisis de las preguntas 1, 2 y 3 del pretest
 
-```{r Grafico1_expl}
+```{r Grafico11_expl}
 pretestCount <- testCount %>% filter(Test=="Pretest") %>% 
   mutate(Respuesta = c("Cuan. Disc.", "Cual.", "Distractor", "Cuan. Cont.",
                        "Cuan. Disc.", "Cual.", "Distractor", "Cuan. Cont.",
@@ -52,7 +52,7 @@ plot1b <- ggplot(data=filter(pretestCount, Pregunta=="P2.0") %>%
 plot1c <- ggplot(data=filter(pretestCount, Pregunta=="P3.0") %>% 
                    mutate(Respuesta=factor(Respuesta,levels=c("Cuan. Disc.","Cual.","Distractor","Cuan. Cont."))),
                  aes(x=Respuesta,y=F.abs)) +
-  geom_bar(stat="identity", position = "dodge", fill=c("coral3","coral3","chartreuse4","coral3")) + 
+  geom_bar(stat="identity", position = "dodge", fill=c("coral3","coral3","chartreuse4","coral3")) +
   guides(fill = "none") +
   geom_text(aes(label=paste0(F.rel, "%")), vjust=2, color="white", size=2.75) +
   scale_y_continuous(limits = c(0,30), breaks = seq(0,30,4)) +
@@ -63,20 +63,67 @@ plot1c <- ggplot(data=filter(pretestCount, Pregunta=="P3.0") %>%
 ggarrange(plot1a, plot1b, plot1c, ncol=3, align = "v")
 ```
 
-::::{.columns}
-:::{.column width="50%"}
 ### Análisis de la pregunta 4 del pretest
-:::
-:::{.column width="50%"}
+```{r Grafico12_expl}
+ggplot(data=filter(pretestCount, Pregunta=="P4.0") %>% 
+                   mutate(Respuesta=factor(Respuesta,levels=c("Distractor 1","Distractor 2","Resp. Correcta","Distractor 3"))),
+                 aes(x=Respuesta,y=F.abs)) +
+  geom_bar(stat="identity", position = "dodge", fill=c("coral3","coral3","chartreuse4","coral3")) +
+  guides(fill = "none") +
+  geom_text(aes(label=paste0(F.rel, "%")), vjust=2, color="white") +
+  scale_y_continuous(limits = c(0,30), breaks = seq(0,30,4)) +
+  labs(x="P4: Elección de variable", y="Frecuencia absoluta") + 
+  theme_minimal() + 
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))
+```
+
 ### Análisis de la pregunta 5 del pretest
-:::
-::::
+```{r Grafico13_expl}
+ggplot(data=filter(pretestCount, Pregunta=="P5.0") %>% 
+                   mutate(Respuesta=factor(Respuesta,levels=c("Moda","Mediana","Media","Distractor"))),
+                 aes(x=Respuesta,y=F.abs)) +
+  geom_bar(stat="identity", position = "dodge", fill=c("coral3","chartreuse4","coral3","coral3")) +
+  guides(fill = "none") +
+  geom_text(aes(label=paste0(F.rel, "%")), vjust=c(2,2,2,-1), color=c("white","white","white","black")) +
+  scale_y_continuous(limits = c(0,40), breaks = seq(0,40,4)) +
+  labs(x="P5: Medidas de tendencia central", y="Frecuencia absoluta") + 
+  theme_minimal() + 
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))
+```
+
+### Análisis de la pregunta 6 del pretest
+```{r Grafico14_expl}
+ggplot(data=filter(pretestCount, Pregunta=="P6.0") %>% 
+                   mutate(Respuesta=factor(Respuesta,levels=c("Freq. Abs.","Freq. Rel.","Distractor 1","Distractor 2"))),
+                 aes(x=Respuesta,y=F.abs)) +
+  geom_bar(stat="identity", position = "dodge", fill=c("coral3","chartreuse4","coral3","coral3")) + 
+  guides(fill = "none") +
+  geom_text(aes(label=paste0(F.rel, "%")), vjust=2, color="white") +
+  scale_y_continuous(limits = c(0,40), breaks = seq(0,40,4)) +
+  labs(x="P6: Criterio de comparación", y="Frecuencia absoluta") + 
+  theme_minimal() + 
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))
+```
+
+### Análisis de la pregunta 7 del pretest
+```{r Grafico15_expl}
+ggplot(data=filter(pretestCount, Pregunta=="P7.0") %>% 
+                   mutate(Respuesta=factor(Respuesta,levels=c("Circular","Barras","Puntos","Línea"))),
+                 aes(x=Respuesta,y=F.abs)) +
+  geom_bar(stat="identity", position = "dodge", fill=c("coral3","chartreuse4","coral3","coral3")) +
+  guides(fill = "none") +
+  geom_text(aes(label=paste0(F.rel, "%")), vjust=c(2,2,2,-1), color=c("white","white","white","black")) +
+  scale_y_continuous(limits = c(0,40), breaks = seq(0,40,4)) +
+  labs(x="P7: Representación visual de los datos", y="Frecuencia absoluta") + 
+  theme_minimal() + 
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))
+```
 
 ## Evolución de los conocimientos por arquetipo de pregunta
 
 ### Avance de las respuestas correctas a lo largo del estudio | Distinción entre Cuantitativo y Cualitativo
 
-```{r Grafico3_expl}
+```{r Grafico21_expl}
 arquetipo1CountBIN <- testCountBIN[c(1:6,19:24,27:30,43:44),]
 
 ggplot(data=filter(arquetipo1CountBIN, Respuesta=="Correcto"),
@@ -92,7 +139,7 @@ ggplot(data=filter(arquetipo1CountBIN, Respuesta=="Correcto"),
 
 ### Avance de las respuestas correctas a lo largo del estudio | Preguntas estadísticas
 
-```{r Grafico4_expl}
+```{r Grafico22_expl}
 arquetipo2CountBIN <- testCountBIN[c(15:18,25:26),]
 
 ggplot(data=filter(arquetipo2CountBIN, Respuesta=="Correcto"),
