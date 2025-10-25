@@ -72,7 +72,7 @@ ggplot(data=filter(pretestCount, Pregunta=="P4.0") %>%
   guides(fill = "none") +
   geom_text(aes(label=paste0(F.rel, "%")), vjust=2, color="white") +
   scale_y_continuous(limits = c(0,30), breaks = seq(0,30,4)) +
-  labs(x="P4: Elección de variable", y="Frecuencia absoluta") + 
+  labs(x="P4: Elección de variable de interés", y="Frecuencia absoluta") + 
   theme_minimal() + 
   theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))
 ```
@@ -124,9 +124,7 @@ ggplot(data=filter(pretestCount, Pregunta=="P7.0") %>%
 ### Avance de las respuestas correctas a lo largo del estudio | Distinción entre Cuantitativo y Cualitativo
 
 ```{r Grafico21_expl}
-arquetipo1CountBIN <- testCountBIN[c(1:6,19:24,27:30,43:44),]
-
-ggplot(data=filter(arquetipo1CountBIN, Respuesta=="Correcto"),
+ggplot(data=filter(testCountBIN[c(1:6,19:24,27:30,43:44),], Respuesta=="Correcto"),
   aes(fill=Test,x=Pregunta,y=F.rel,group=Test)) +
   geom_bar(stat="identity", width=0.85, position=position_dodge2(width = 0.5, padding = 0.25)) +
   scale_fill_manual(values=c("coral3","goldenrod3","chartreuse","chartreuse4")) + 
@@ -140,15 +138,84 @@ ggplot(data=filter(arquetipo1CountBIN, Respuesta=="Correcto"),
 ### Avance de las respuestas correctas a lo largo del estudio | Preguntas estadísticas
 
 ```{r Grafico22_expl}
-arquetipo2CountBIN <- testCountBIN[c(15:18,25:26),]
-
-ggplot(data=filter(arquetipo2CountBIN, Respuesta=="Correcto"),
+ggplot(data=filter(testCountBIN[c(15:18,25:26),], Respuesta=="Correcto"),
   aes(fill=Test,x=Pregunta,y=F.rel,group=Test)) +
   geom_bar(stat="identity", width=0.85, position=position_dodge2(width = 0.5, padding = 0.25)) +
-  scale_fill_manual(values=c("goldenrod3","chartreuse4")) + 
+  scale_fill_manual(values=c("goldenrod3","chartreuse")) + 
   geom_text(aes(label=paste0(F.rel, "%")), vjust=2, color="white") + 
   scale_y_continuous(limits = c(0,100), breaks = seq(0,100,10)) +
   scale_x_discrete(labels=c("P1","P2","P1")) + 
+  labs(x="", y="Porcentaje de respuestas correctas") + 
+  theme_minimal()
+```
+
+### Avance de las respuestas correctas a lo largo del estudio | Variables de interés
+
+```{r Grafico23_expl}
+ggplot(data=filter(testCountBIN[c(7:8,31:34,45:46),], Respuesta=="Correcto"),
+  aes(fill=Test,x=Pregunta,y=F.rel,group=Test)) +
+  geom_bar(stat="identity", width=0.85, position=position_dodge2(width = 0.5, padding = 0.25)) +
+  scale_fill_manual(values=c("coral3","chartreuse","chartreuse4")) + 
+  geom_text(aes(label=paste0(F.rel, "%")), vjust=2, color="white") + 
+  scale_y_continuous(limits = c(0,100), breaks = seq(0,100,10)) +
+  scale_x_discrete(labels=c("P4","P4","P5","P2")) + 
+  labs(x="", y="Porcentaje de respuestas correctas") + 
+  theme_minimal()
+```
+
+### Tamaño de la muestra
+
+```{r Grafico2extra_expl}
+ggplot(data=filter(testCount, Pregunta=="P6.2") %>% 
+                   mutate(Respuesta=factor(c("Pobl. Finita","Pobl. Inf.","Distractor 1","Distractor 2"),levels=c("Pobl. Finita","Pobl. Inf.","Distractor 1","Distractor 2"))),
+                 aes(x=Respuesta,y=F.abs)) +
+  geom_bar(stat="identity", position = "dodge", fill=c("chartreuse4","coral3","coral3","coral3")) + 
+  guides(fill = "none") +
+  geom_text(aes(label=paste0(F.rel, "%")), vjust=2, color="white") +
+  scale_y_continuous(limits = c(0,30), breaks = seq(0,30,4)) +
+  labs(x="", y="Frecuencia absoluta") + 
+  theme_minimal() + 
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))
+```
+
+### Avance de las respuestas correctas a lo largo del estudio | Preguntas "correctas"
+
+```{r Grafico24_expl}
+ggplot(data=filter(testCountBIN[c(37:42,47:48),], Respuesta=="Correcto"),
+  aes(fill=Test,x=Pregunta,y=F.rel,group=Test)) +
+  geom_bar(stat="identity", width=0.85, position=position_dodge2(width = 0.5, padding = 0.25)) +
+  scale_fill_manual(values=c("chartreuse","chartreuse4")) + 
+  geom_text(aes(label=paste0(F.rel, "%")), vjust=2, color="white") + 
+  scale_y_continuous(limits = c(0,100), breaks = seq(0,100,10)) +
+  scale_x_discrete(labels=c("P7","P8","P9","P3")) + 
+  labs(x="", y="Porcentaje de respuestas correctas") + 
+  theme_minimal()
+```
+
+### Avance de las respuestas correctas a lo largo del estudio | Estimador de tendencia central
+
+```{r Grafico25_expl}
+ggplot(data=filter(testCountBIN[c(9:10,49:50),], Respuesta=="Correcto"),
+  aes(fill=Test,x=Pregunta,y=F.rel,group=Test)) +
+  geom_bar(stat="identity", width=0.85, position=position_dodge2(width = 0.5, padding = 0.25)) +
+  scale_fill_manual(values=c("coral3","chartreuse4")) + 
+  geom_text(aes(label=paste0(F.rel, "%")), vjust=2, color="white") + 
+  scale_y_continuous(limits = c(0,100), breaks = seq(0,100,10)) +
+  scale_x_discrete(labels=c("P5","P4")) + 
+  labs(x="", y="Porcentaje de respuestas correctas") + 
+  theme_minimal()
+```
+
+### Avance de las respuestas correctas a lo largo del estudio | Representación e interpretación gráfica
+
+```{r Grafico26_expl}
+ggplot(data=filter(testCountBIN[c(13:14,51:60),], Respuesta=="Correcto"),
+  aes(fill=Test,x=Pregunta,y=F.rel,group=Test)) +
+  geom_bar(stat="identity", width=0.85, position=position_dodge2(width = 0.5, padding = 0.25)) +
+  scale_fill_manual(values=c("coral3","chartreuse4")) + 
+  geom_text(aes(label=paste0(F.rel, "%")), vjust=2, color="white") + 
+  scale_y_continuous(limits = c(0,100), breaks = seq(0,100,10)) +
+  scale_x_discrete(labels=c("P7","P5","P6","P7","P8","P9")) + 
   labs(x="", y="Porcentaje de respuestas correctas") + 
   theme_minimal()
 ```
