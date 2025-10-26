@@ -52,7 +52,7 @@ plot1b <- ggplot(data=filter(pretestCount, Pregunta=="P2.0") %>%
 plot1c <- ggplot(data=filter(pretestCount, Pregunta=="P3.0") %>% 
                    mutate(Respuesta=factor(Respuesta,levels=c("Cuan. Disc.","Cual.","Distractor","Cuan. Cont."))),
                  aes(x=Respuesta,y=F.abs)) +
-  geom_bar(stat="identity", position = "dodge", fill=c("coral3","coral3","chartreuse4","coral3")) +
+  geom_bar(stat="identity", position = "dodge", fill=c("coral3","chartreuse4","coral3","coral3")) +
   guides(fill = "none") +
   geom_text(aes(label=paste0(F.rel, "%")), vjust=2, color="white", size=2.75) +
   scale_y_continuous(limits = c(0,30), breaks = seq(0,30,4)) +
@@ -62,6 +62,8 @@ plot1c <- ggplot(data=filter(pretestCount, Pregunta=="P3.0") %>%
 
 ggarrange(plot1a, plot1b, plot1c, ncol=3, align = "v")
 ```
+
+El gráfico nos muestra que los alumnos son capaces de distinguir cuantitativo discreto de los demás mejor que el resto de tipos. Se puede ver que no son muy capaces de distinguir el cualitativo del cuantitativo contínuo.
 
 ### Análisis de la pregunta 4 del pretest
 ```{r Grafico12_expl}
@@ -91,6 +93,8 @@ ggplot(data=filter(pretestCount, Pregunta=="P5.0") %>%
   theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))
 ```
 
+La mayoría saben distinguir las diferentes medidas de tendencia central, aunque hay una parte que confundieron la mediana y la media.
+
 ### Análisis de la pregunta 6 del pretest
 ```{r Grafico14_expl}
 ggplot(data=filter(pretestCount, Pregunta=="P6.0") %>% 
@@ -119,6 +123,8 @@ ggplot(data=filter(pretestCount, Pregunta=="P7.0") %>%
   theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))
 ```
 
+La gran mayoría de alumnos han escogido un tipo de gráfico que realmente puede representar los datos, y una gran parte de estos eligieron los gráficos de barras por encima de los gráficos circulares.
+
 ## Evolución de los conocimientos por arquetipo de pregunta
 
 ### Avance de las respuestas correctas a lo largo del estudio | Distinción entre Cuantitativo y Cualitativo
@@ -135,6 +141,8 @@ ggplot(data=filter(testCountBIN[c(1:6,19:24,27:30,43:44),], Respuesta=="Correcto
   theme_minimal()
 ```
 
+Justo después de dar las primeras clases, al realizar el Test 1 se puede ver un incremento considerable en las respuestas correctas, dado que tienen los conocimientos frescos. Para los Tests 2 y 3, que se llevaron a cabo después de un tiempo considerable, ven una reducción en el porcentaje de respuestas correctas, pero siguen siendo superiores a las del Pretest.
+
 ### Avance de las respuestas correctas a lo largo del estudio | Preguntas estadísticas
 
 ```{r Grafico22_expl}
@@ -148,6 +156,8 @@ ggplot(data=filter(testCountBIN[c(15:18,25:26),], Respuesta=="Correcto"),
   labs(x="", y="Porcentaje de respuestas correctas") + 
   theme_minimal()
 ```
+
+En el Test 1, se puede ver que la suma de ambas respuestas es muy cercano al 100%, lo cual da a entender que la mayoría de personas decidieron contestar la misma respuesta en ambas preguntas [REQUIERE INSERTAR MÁS EXPLICACIÓN Y CONTEXTO AL RESPECTO]. Al ver los resultados del Test 1 y llegar a esta conclusión, decidí dedicar una parte del tiempo de la lección a revisar estos conceptos. Después de esto, en el Test 2, casi un 90% de los alumnos contestaron correctamente la pregunta.
 
 ### Avance de las respuestas correctas a lo largo del estudio | Variables de interés
 
@@ -163,11 +173,13 @@ ggplot(data=filter(testCountBIN[c(7:8,31:34,45:46),], Respuesta=="Correcto"),
   theme_minimal()
 ```
 
+Se puede ver una diferencia en el porcentaje de respuestas correctas entre el Pretest y los Tests 2 y 3.
+
 ### Tamaño de la muestra
 
 ```{r Grafico2extra_expl}
 ggplot(data=filter(testCount, Pregunta=="P6.2") %>% 
-                   mutate(Respuesta=factor(c("Pobl. Finita","Pobl. Inf.","Distractor 1","Distractor 2"),levels=c("Pobl. Finita","Pobl. Inf.","Distractor 1","Distractor 2"))),
+                   mutate(Respuesta=factor(c("Pobl. Inf.","Pobl. Finita","Distractor 1","Distractor 2"),levels=c("Pobl. Inf.","Pobl. Finita","Distractor 1","Distractor 2"))),
                  aes(x=Respuesta,y=F.abs)) +
   geom_bar(stat="identity", position = "dodge", fill=c("chartreuse4","coral3","coral3","coral3")) + 
   guides(fill = "none") +
@@ -178,7 +190,11 @@ ggplot(data=filter(testCount, Pregunta=="P6.2") %>%
   theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))
 ```
 
+Esta pregunta no tiene ningún tipo de seguimiento ni continuación, así que ha sido aislada y se analizará individualmente. Por desgracia, no hay mucha gente que contestara correctamente, incluso al ser un punto increiblemente importante y remarcado en la lección.
+
 ### Avance de las respuestas correctas a lo largo del estudio | Preguntas "correctas"
+
+[ESTE GRÁFICO ES INCORRECTO: LA PREGUNTA 7 DEL TEST 2 *NO* ES SOBRE ESTE TEMA, ES OTRA PREGUNTA INDIVIDUAL Y SIN SEGUIMIENTO]
 
 ```{r Grafico24_expl}
 ggplot(data=filter(testCountBIN[c(37:42,47:48),], Respuesta=="Correcto"),
@@ -191,6 +207,8 @@ ggplot(data=filter(testCountBIN[c(37:42,47:48),], Respuesta=="Correcto"),
   labs(x="", y="Porcentaje de respuestas correctas") + 
   theme_minimal()
 ```
+
+A pesar de dedicar una lección entera a este tema, al ser un tema que tiene una parte subjetiva, mucha gente contestó de manera erronea.
 
 ### Avance de las respuestas correctas a lo largo del estudio | Estimador de tendencia central
 
@@ -206,6 +224,8 @@ ggplot(data=filter(testCountBIN[c(9:10,49:50),], Respuesta=="Correcto"),
   theme_minimal()
 ```
 
+A pesar de tener un seguimiento, no tiene sentido comparar ambas preguntas, ya que la primera se centra en saber distinguir entre los diferentes estimadores y la segunda se centra en escoger el estimador más adecuado.
+
 ### Avance de las respuestas correctas a lo largo del estudio | Representación e interpretación gráfica
 
 ```{r Grafico26_expl}
@@ -220,4 +240,4 @@ ggplot(data=filter(testCountBIN[c(13:14,51:60),], Respuesta=="Correcto"),
   theme_minimal()
 ```
 
-
+A pesar de tener un seguimiento, no tiene sentido comparar las preguntas entre ambos tests; en el Pretest, se evalua el saber escoger un gráfico adecuado para la representación de los datos, mientras que en Test 3, se presentan varios gráficos, los cuales requieren interpretación. Solo la pregunta 5 del Test 3 se asemeja a la pregunta del Pretest, y esta no muestra una mejoría en la comprensión de los alumnos.
