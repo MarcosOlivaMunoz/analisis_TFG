@@ -252,7 +252,7 @@ P7. Observando el siguiente *gráfico de barras*, ¿Cuál afirmación es correct
 pregunta7_test3
 ```
 
-* En frecuencia relativa, los hombres tiene más demencia que las mujeres]{.mark}
+* [En frecuencia relativa, los hombres tiene más demencia que las mujeres]{.mark}
 * En frecuencia absoluta, las mujeres tienen menos alzhéimer que los hombres
 * En frecuencia absoluta, no se puede apreciar una diferencia significativa de Alzheimer por sexo
 * En frecuencia relativa, los hombres tienen menos alzhéimer que las mujeres
