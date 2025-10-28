@@ -18,7 +18,7 @@ pretestCount <- testCount %>% filter(Test=="Pretest") %>%
 plot1a <- ggplot(data=filter(pretestCount, Pregunta=="P1.0") %>% 
                    mutate(Respuesta=factor(Respuesta,levels=c("Cuan. Disc.","Cual.","Distractor","Cuan. Cont."))),
                  aes(x=Respuesta,y=F.abs)) +
-  geom_bar(stat="identity", position = "dodge", fill=c("chartreuse4","coral3","coral3","coral3")) + 
+  geom_bar(stat="identity", position = "dodge", fill=c("forestgreen","coral3","coral3","coral3")) + 
   guides(fill = "none") +
   geom_text(aes(label=paste0(F.rel, "%")), vjust=c(2,2,2,-1), color=c("white","white","white","black"), size=2.75) +
   scale_y_continuous(limits = c(0,30), breaks = seq(0,30,4)) +
@@ -28,7 +28,7 @@ plot1a <- ggplot(data=filter(pretestCount, Pregunta=="P1.0") %>%
 plot1b <- ggplot(data=filter(pretestCount, Pregunta=="P2.0") %>% 
                    mutate(Respuesta=factor(Respuesta,levels=c("Cuan. Disc.","Cual.","Distractor","Cuan. Cont."))),
                  aes(x=Respuesta,y=F.abs)) +
-  geom_bar(stat="identity", position = "dodge", fill=c("coral3","coral3","coral3","chartreuse4")) + 
+  geom_bar(stat="identity", position = "dodge", fill=c("coral3","coral3","coral3","forestgreen")) + 
   guides(fill = "none") +
   geom_text(aes(label=paste0(F.rel, "%")), vjust=2, color="white", size=2.75) +
   scale_y_continuous(limits = c(0,30), breaks = seq(0,30,4)) +
@@ -38,7 +38,7 @@ plot1b <- ggplot(data=filter(pretestCount, Pregunta=="P2.0") %>%
 plot1c <- ggplot(data=filter(pretestCount, Pregunta=="P3.0") %>% 
                    mutate(Respuesta=factor(Respuesta,levels=c("Cuan. Disc.","Cual.","Distractor","Cuan. Cont."))),
                  aes(x=Respuesta,y=F.abs)) +
-  geom_bar(stat="identity", position = "dodge", fill=c("coral3","coral3","chartreuse4","coral3")) + 
+  geom_bar(stat="identity", position = "dodge", fill=c("coral3","coral3","forestgreen","coral3")) + 
   guides(fill = "none") +
   geom_text(aes(label=paste0(F.rel, "%")), vjust=2, color="white", size=2.75) +
   scale_y_continuous(limits = c(0,30), breaks = seq(0,30,4)) +
@@ -55,7 +55,7 @@ arquetipo1CountBIN <- testCountBIN[c(1:6,19:24,27:30,43:44),]
 
 plot3 <- ggplot(data=filter(arquetipo1CountBIN, Respuesta=="Correcto"), aes(fill=Test,x=Pregunta,y=F.rel,group=Test)) +
   geom_bar(stat="identity", width=0.85, position=position_dodge2(width = 0.5, padding = 0.25)) +
-  scale_fill_manual(values=c("coral3","goldenrod3","chartreuse","chartreuse4")) + 
+  scale_fill_manual(values=c("coral3","goldenrod3","chartreuse3","forestgreen")) + 
   geom_text(aes(label=paste0(F.rel, "%")), vjust=2, color="white") + 
   scale_y_continuous(limits = c(0,100), breaks = seq(0,100,10)) +
   scale_x_discrete(labels=c("P1","P2","P3","P3","P4","P5","P2","P3","P1")) + 
@@ -70,7 +70,7 @@ arquetipo2CountBIN <- testCountBIN[c(15:18,25:26),]
 
 plot4 <- ggplot(data=filter(arquetipo2CountBIN, Respuesta=="Correcto"), aes(fill=Test,x=Pregunta,y=F.rel,group=Test)) +
   geom_bar(stat="identity", width=0.85, position=position_dodge2(width = 0.5, padding = 0.25)) +
-  scale_fill_manual(values=c("goldenrod3","chartreuse4")) + 
+  scale_fill_manual(values=c("goldenrod3","forestgreen")) + 
   geom_text(aes(label=paste0(F.rel, "%")), vjust=2, color="white") + 
   scale_y_continuous(limits = c(0,100), breaks = seq(0,100,10)) +
   scale_x_discrete(labels=c("P1","P2","P1")) + 
